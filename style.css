@@ -1,0 +1,117 @@
+
+/* mobile */
+html{
+    width:100%;
+}
+
+div{
+}
+
+body {
+    width:100%;
+    margin:0px;
+    background-color: #F1F2F2;
+}
+header{    
+    display:inline-block;
+    width:100%;
+    background-color: white;
+    height: 160px;
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,.10),0 8px 10px rgba(0,0,0,.10);
+    -moz-box-shadow: 0 0 5px rgba(0,0,0,.10),0 8px 10px rgba(0,0,0,.10);
+    box-shadow: 0 0 5px rgba(0,0,0,.10),0 8px 10px rgba(0,0,0,.10);
+    margin-bottom: 20px;
+}
+
+img{
+    max-width:100%;
+    max-height:100%;
+
+}
+
+#HeaderCenter{
+    width: 100%;
+
+}
+
+#Menu{
+    width:430px;
+    display:block;
+    margin: 10px auto 5px auto;
+}
+
+button{
+    border-radius: 3px;
+    background-color: #E6E7E8;
+    border-style: none;
+    width: 130px;
+    padding:4px 0px 4px 0px;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 5px;
+    border: none;
+    outline: none;
+
+}
+
+button:hover{
+    background-color: #B9EAE5;
+}
+
+button:active{
+    background-color: #00A79D;
+}
+
+button:focus{
+    border-style: none;
+}
+
+#Logo{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    width:80%;
+}
+
+
+
+#Social{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: blue;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#Post{
+    width:100%;
+    background-color: white;
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,.10),0 8px 10px rgba(0,0,0,.10);
+    -moz-box-shadow: 0 0 5px rgba(0,0,0,.10),0 8px 10px rgba(0,0,0,.10);
+    box-shadow: 0 0 5px rgba(0,0,0,.10),0 8px 10px rgba(0,0,0,.10);
+    margin-bottom: 20px;
+}
+
+#PostCenter{
+
+}
+
+#Buttons{
+    width:430px;
+    display:block;
+    margin: 10px auto 5px auto;
+
+}
+
+PostHeader
+
+SharePost
+
+/* desktop */
+
+@media only screen and (min-width: 500px){
+
+}
