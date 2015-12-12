@@ -1,6 +1,6 @@
 Tools
 
-* Install Django
-    * Install pip
+* ~~Install Django~~
+    * ~~Install pip~~
 * install Mysql (postgreSQL) locally
 
