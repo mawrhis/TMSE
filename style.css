@@ -15,9 +15,7 @@ body {
     margin:0px;
     background-color: #F1F2F2;
 }
-header{    
-    width:100%;
-}
+
 
 img{
     max-width:100%;
@@ -25,7 +23,7 @@ img{
 
 }
 
-#HeaderCenter{
+#HeaderRight{
     width: 100%;
     display:inline-block;
     background-color: white;
@@ -33,7 +31,6 @@ img{
     -webkit-box-shadow: 0 0 5px rgba(0,0,0,.10),0 8px 10px rgba(0,0,0,.10);
     -moz-box-shadow: 0 0 5px rgba(0,0,0,.10),0 8px 10px rgba(0,0,0,.10);
     box-shadow: 0 0 5px rgba(0,0,0,.10),0 8px 10px rgba(0,0,0,.10);
-    margin-bottom: 20px;
 
 }
 
@@ -75,7 +72,7 @@ button:focus{
     margin-right: auto;
     margin-left: auto;
     margin-top: 30px;
-    width:80%;
+    width:100%;
 }
 
 
@@ -119,6 +116,11 @@ button:focus{
     display:block;
     margin: 10px auto 5px auto;
 
+}
+
+#ButtonsWide{
+    visibility: hidden;
+    display:none;
 }
 
 .PostHeader{
@@ -173,37 +175,77 @@ h1{
     margin: 5px;
 }
 
-/* desktop */
+/* desktop larger than 1000 */
 
 @media only screen and (min-width: 1000px){
 
 
+body{
+    height: 100vh;
+}
+
+
+#PageWrapper{
+    width: 80%;
+    margin: auto;
+}
+
 .comics{
     margin: 0px auto 0px auto;    
+    height: 82%;
     padding: 0px 50px 0px 50px;
 }
 
 #Post{
-    text-align: center;
+    height: 100vh;
+    width: 58%;
+    float:left;
 }
 
 #PostCenter{
     border-radius: 3px;
     position: relative;
     display:inline-block;
-    width: 900px;
-    margin: 20px auto 0px auto;
+    text-align: center;
+    height: 96%;
+
+    min-height: 96%;
+    margin: 20px 60px 20px 20px;
 
 }
 
-#HeaderCenter{
+#HeaderWrapper{
+    float:left;
+    width:30%;
+
+}
+
+#Buttons{
+
+    visibility: hidden;
+    display: none;
+
+}
+#ButtonsWide{
+    width:430px;
+    display:block;
+    margin: 10px auto 5px auto;
+    visibility: visible;
+}
+
+#HeaderRight{
     border-radius: 3px;
     position: relative;
-    display:block;
-    width: 900px;
+    display: block;
     height: 220px;
-    margin: 20px auto 0px auto;
+    margin: 20px ;
     text-align: center;
+    background-color: transparent;
+    height: 160px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    margin-bottom: 20px;
 
 }
 
@@ -219,9 +261,38 @@ h1{
 #SharePost{
     position: absolute;
     display:inline-block;
-    right: -60px;
-    top: 15px;
+    right: 10px;
+    top: 95%;
+}
+
+#clear
+{
+clear: both;
+}
+}
+
+/* desktop larger than 1366 */
+
+@media only screen and (min-width: 1380px){
+
+
+#HeaderWrapper{
+    width: 30%;
+}
+
+.comics {
+    margin: 0px auto 0px auto;
+    height: 90%;
+    padding: 0px 50px 0px 50px;
+}
+
+#Post {
+    width: 60%;
 }
 
 
+
 }
+
+
+
