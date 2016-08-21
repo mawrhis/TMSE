@@ -4,6 +4,7 @@
     <head>
             <link rel="stylesheet" type="text/css" href="style.css">
     </head>
+    <script src="modal.js"></script>
     <body>
     <div id="PageWrapper">
         <div id="Post">
@@ -20,7 +21,7 @@
                     <h1>shoot to the moon</h1>
                 </div>
                 <div class="comics">
-                    <img id="ComicImage" src="nr67.png" >
+                    <img id="ComicImage" src="nr23.png" alt="shoot to the moon" >
                 </div>
             </div>
         </div>
@@ -43,6 +44,20 @@
         </div>
         <div id="clear">
         </div>
+
+    </div>
+                 <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <div class="CloseLayer"></div>
+
+        <!-- The Close Button -->
+        <span class="close" onclick="document.getElementById('myModal').style.display='none'">&#215;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
     </div>
     </body>
 </html>

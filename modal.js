@@ -1,8 +1,9 @@
+window.onload = function(){ 
 // Get the modal
-var modal = document.getElementById('myModal');
+var modal = document.getElementById("myModal");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('myImg');
+var img = document.getElementById("ComicImage");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 img.onclick = function(){
@@ -19,3 +20,14 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() { 
   modal.style.display = "none";
 }
+
+// Get the whole page that closes the modal
+var div = document.getElementsByClassName("CloseLayer")[0];
+
+// When the user clicks on <span> (x), close the modal
+div.onclick = function() { 
+  modal.style.display = "none";
+}
+
+
+};
