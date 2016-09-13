@@ -1,8 +1,7 @@
-$def with (todos)
-<ul>
-$for todo in todos:
-    <li id="t$todo.id">$todo.title</li>
-</ul>
-<form method="post" action="add">
-<p><input type="text" name="title" /> <input type="submit" value="Add" /></p>
-</form>
+$def with (latest_post)
+<div class="PostHeader">
+    <h1>$latest_post</h1>
+</div>
+<div class="comics">
+    <img id="ComicImage" src="static/$latest_post" alt="shoot to the moon" >
+</div>

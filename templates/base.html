@@ -1,0 +1,63 @@
+$def with (page)
+<!DOCTYPE html>
+
+<html>
+    <title>tmsecomix</title>
+    <head>
+            <link rel="stylesheet" type="text/css" href="static/style.css">
+    </head>
+    <script src="static/modal.js"></script>
+    <body>
+    <div id="PageWrapper">
+        <div id="Post">
+            <div id="PostCenter">
+                <div id="SharePost">
+                
+                </div>
+                <div id="Buttons">
+                    <button type="button">Previous</button>
+                    <button type="button">Random</button>
+                    <button type="button">Next</button>
+                </div>
+
+                $:page
+
+                
+            </div>
+        </div>
+        <div id="HeaderWrapper">
+                    <div id="HeaderRight">
+                        <div id="Logo"><img src="static/logo.png"></div>
+                        <div id="Social">
+                        </div>
+                        <div id="ButtonsWide">
+                            <button type="button">Previous</button>
+                            <button type="button">Random</button>
+                            <button type="button">Next</button>
+                        </div>
+                        <div id="Menu">
+                            <button type="button" onClick="location.href='/'" >Comics</button>
+                            <button type="button">About</button>
+                            <button type="button">Top</button>
+                        </div>
+                    </div>
+        </div>
+        <div id="clear">
+        </div>
+
+    </div>
+                 <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <div class="CloseLayer"></div>
+
+        <!-- The Close Button -->
+        <span class="close" onclick="document.getElementById('myModal').style.display='none'">&#215;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+    </div>
+    </body>
+</html>
