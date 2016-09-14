@@ -1,0 +1,63 @@
+$def with (post)
+
+$code:
+    previous_post = int(post.id) - 1
+    next_post = int(post.id) + 1
+
+ <div id="PageWrapper">
+        <div id="Post">
+            <div id="PostCenter">
+                <div id="SharePost">
+                
+                </div>
+                <div id="Buttons">
+                    <button type="button">Previous</button>
+                    <button type="button">Random</button>
+                    <button type="button">Next</button>
+                </div>
+
+					
+					<div class="PostHeader">
+					    <h1>$post.post_header</h1>
+					</div>
+					<div class="comics">
+					    <img id="ComicImage" src="static/images/$post.post_image" alt="shoot to the moon" >
+					</div>
+
+                
+            </div>
+        </div>
+        <div id="HeaderWrapper">
+                    <div id="HeaderRight">
+                        <div id="Logo"><img src="static/logo.png"></div>
+                        <div id="Social">
+                        </div>
+                        <div id="ButtonsWide">
+                            <a class ="button" href="/$previous_post">Previous</a>  
+                            <button type="button">Random</button>
+                            <a class ="button" href="/$next_post">Next</a>  
+                        </div>
+                        <div id="Menu">
+                            <a class="button" href='/'>Comics</a>
+                            <button type="button">About</button>
+                            <button type="button">Top</button>
+                        </div>
+                    </div>
+        </div>
+        <div id="clear">
+        </div>
+
+    </div>
+                 <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <div class="CloseLayer"></div>
+
+        <!-- The Close Button -->
+        <span class="close" onclick="document.getElementById('myModal').style.display='none'">&#215;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+    </div>

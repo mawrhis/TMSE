@@ -62,6 +62,21 @@ button{
 
 }
 
+.button{
+    border-radius: 3px;
+    background-color: #E6E7E8;
+    border-style: none;
+    width: 130px;
+    padding:4px 0px 4px 0px;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 5px;
+    border: none;
+    outline: none;
+    font-family: 'PT Sans';
+
+}
+
 button:hover{
     background-color: #B9EAE5;
 }

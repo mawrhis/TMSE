@@ -1,7 +1,54 @@
-$def with (latest_post)
-<div class="PostHeader">
-    <h1>$latest_post</h1>
+$def with (latest_post, post)
+
+<div id="PageWrapper">
+    <div id="Post">
+        <div id="PostCenter">
+            <div id="SharePost">                
+            </div>
+            <div id="Buttons">
+                <button type="button">Previous</button>
+                <button type="button">Random</button>
+                <button type="button">Next</button>
+            </div>                     
+            <div class="PostHeader">
+                <h1>$latest_post</h1>
+            </div>
+            <div class="comics">
+                <img id="ComicImage" src="static/$latest_post" alt="shoot to the moon" >
+            </div>
+        </div>
+    </div>
+    <div id="HeaderWrapper">
+                <div id="HeaderRight">
+                    <div id="Logo"><img src="static/logo.png"></div>
+                    <div id="Social">
+                    </div>
+                    <div id="ButtonsWide">
+                        <a class ="button" href="/comics/$post">Previous</a>
+                        <button type="button">Random</button>
+                        <button type="button">Next</button>
+                    </div>
+                    <div id="Menu">
+                        <a class="button" href='/'>Comics</a>
+                        <button type="button">About</button>
+                        <button type="button">Top</button>
+                    </div>
+                </div>
+    </div>
+    <div id="clear">
+    </div>
+
 </div>
-<div class="comics">
-    <img id="ComicImage" src="static/$latest_post" alt="shoot to the moon" >
+             <!-- The Modal -->
+<div id="myModal" class="modal">
+    <div class="CloseLayer"></div>
+
+    <!-- The Close Button -->
+    <span class="close" onclick="document.getElementById('myModal').style.display='none'">&#215;</span>
+
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
 </div>
