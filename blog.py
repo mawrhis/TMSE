@@ -1,5 +1,6 @@
 import web
 import model #will work with database
+import random
 
 urls = (
 	'/', 'Index',
@@ -24,7 +25,8 @@ class Index:
 class Comics:
 	def GET(self,id):
 		post = model.get_post(int(id))
-		return render.comics(post)
+		random_post = random.randint(1,73)
+		return render.comics(post, random_post)
 
 
 '''

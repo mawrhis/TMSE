@@ -1,19 +1,19 @@
-$def with (post)
+$def with (post, random_post)
 
 $code:
     previous_post = int(post.id) - 1
     next_post = int(post.id) + 1
 
- <div id="PageWrapper">
+<div id="PageWrapper">
         <div id="Post">
             <div id="PostCenter">
                 <div id="SharePost">
                 
                 </div>
                 <div id="Buttons">
-                    <button type="button">Previous</button>
-                    <button type="button">Random</button>
-                    <button type="button">Next</button>
+                    <div class="button"><a href="/$previous_post">Previous</a></div>  
+                    <div class="button"><a href="/$random_post">Random</a></div>                  
+                    <div class="button"><a class ="button" href="/$next_post">Next</a></div> 
                 </div>
 
 					
@@ -29,16 +29,15 @@ $code:
         </div>
         <div id="HeaderWrapper">
                     <div id="HeaderRight">
-                        <div id="Logo"><img src="static/logo.png"></div>
-                        <div id="Social">
-                        </div>
+                        <div id="Logo"><a href='/'><img src="static/logo.png"></a></div>
+                        <div id="Social"></div>
+
                         <div id="ButtonsWide">
                             <a class ="button" href="/$previous_post">Previous</a>  
-                            <button type="button">Random</button>
+                            <a class ="button" href="/$random_post">Random</a>                  
                             <a class ="button" href="/$next_post">Next</a>  
                         </div>
                         <div id="Menu">
-                            <a class="button" href='/'>Comics</a>
                             <button type="button">About</button>
                             <button type="button">Top</button>
                         </div>

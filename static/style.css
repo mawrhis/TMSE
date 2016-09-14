@@ -74,19 +74,30 @@ button{
     border: none;
     outline: none;
     font-family: 'PT Sans';
+    color: black;
+    text-decoration: none !important;
+    float: right;
+    text-align: center;
 
 }
 
-button:hover{
+
+.button:hover{
     background-color: #B9EAE5;
 }
 
-button:active{
+.button:active{
     background-color: #00A79D;
 }
 
-button:focus{
+.button:focus{
     border-style: none;
+}
+
+a:-webkit-any-link {
+    color: black;
+    text-decoration: none;
+    cursor: auto;
 }
 
 #Logo{
