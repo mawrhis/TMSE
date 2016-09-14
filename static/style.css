@@ -306,7 +306,6 @@ clear: both;
             /* Style the Image Used to Trigger the Modal */
 #ComicImage {
     cursor: pointer;
-    transition: 0.3s;
 }
 
 #ComicImage:hover {opacity: 0.9;}

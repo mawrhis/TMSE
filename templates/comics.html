@@ -2,7 +2,10 @@ $def with (post, random_post)
 
 $code:
     previous_post = int(post.id) - 1
-    next_post = int(post.id) + 1
+    if int(post.id) > 72:
+    		next_post = int(post.id)
+    else:
+    		next_post = int(post.id) + 1
 
 <div id="PageWrapper">
         <div id="Post">
@@ -30,7 +33,7 @@ $code:
         <div id="HeaderWrapper">
                     <div id="HeaderRight">
                         <div id="Logo"><a href='/'><img src="static/logo.png"></a></div>
-                        <div id="Social"></div>
+                        <a href='https://www.facebook.com/tmsecomix/'><div id="Social"></div></a>
 
                         <div id="ButtonsWide">
                             <a class ="button" href="/$previous_post">Previous</a>  
