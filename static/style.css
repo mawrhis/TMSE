@@ -35,6 +35,7 @@ img{
     display:inline-block;
     background-color: white;
     height: 160px;
+    width: 130px;
     -webkit-box-shadow: 0 0 5px rgba(0,0,0,.10),0 8px 10px rgba(0,0,0,.10);
     -moz-box-shadow: 0 0 5px rgba(0,0,0,.10),0 8px 10px rgba(0,0,0,.10);
     box-shadow: 0 0 5px rgba(0,0,0,.10),0 8px 10px rgba(0,0,0,.10);
@@ -42,9 +43,9 @@ img{
 }
 
 #Menu{
-    width:430px;
     display:block;
-    margin: 10px auto 5px auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 button{
@@ -55,7 +56,8 @@ button{
     padding:4px 0px 4px 0px;
     font-size: 24px;
     font-weight: 500;
-    margin: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     border: none;
     outline: none;
     font-family: 'PT Sans';
@@ -74,9 +76,9 @@ button{
     border: none;
     outline: none;
     font-family: 'PT Sans';
-    color: black;
+    color: #8c8c8c !important;
     text-decoration: none !important;
-    float: right;
+    float: left;
     text-align: center;
 
 }
@@ -84,10 +86,12 @@ button{
 
 .button:hover{
     background-color: #B9EAE5;
+    color: black !important;
 }
 
 .button:active{
     background-color: #00A79D;
+    color: black !important;
 }
 
 .button:focus{
@@ -101,10 +105,8 @@ a:-webkit-any-link {
 }
 
 #Logo{
-    display: block;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 30px;
     width:100%;
 }
 
@@ -219,7 +221,7 @@ body{
 
 
 #PageWrapper{
-    width: 80%;
+    width: 60%;
     margin: auto;
 }
 
@@ -249,7 +251,7 @@ body{
 
 #HeaderWrapper{
     float:left;
-    width:30%;
+    width:15%;
 
 }
 
@@ -260,7 +262,6 @@ body{
 
 }
 #ButtonsWide{
-    width:430px;
     display:block;
     margin: 10px auto 5px auto;
     visibility: visible;
@@ -269,22 +270,15 @@ body{
 #HeaderRight{
     border-radius: 3px;
     position: relative;
-    display: block;
-    height: 220px;
+    height: auto;
     margin: 20px ;
-    text-align: center;
     background-color: transparent;
-    height: 160px;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-    margin-bottom: 20px;
 
 }
 
-#Logo{
-    display:inline-block;
-}
 
 #Social{
     position: absolute;
@@ -422,7 +416,8 @@ clear: both;
 
 
 #HeaderWrapper{
-    width: 30%;
+    width: 15%;
+    margin-left: 30px;
 }
 
 .comics {
@@ -432,7 +427,7 @@ clear: both;
 }
 
 #Post {
-    width: 60%;
+    width: 80%;
 }
 
 

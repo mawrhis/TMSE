@@ -25,4 +25,6 @@ index page functionality
 
 	retrieve id of latest comic from database - write python function for that
 
+To Do:
 
+* make Previous, Random and Next buttons text black when viewing comics, make about and top buttons text black when visiting those pages
